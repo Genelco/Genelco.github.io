@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="title:tcpdump title: tcpdumpdate: 2019-01-05 08:41:05 tags:抓包测试关于tcpdump的一些应用：日常应用tcpdump -D看可以监听的端口tcpdump -i br-lan -w  名字.captftp -p -r 名字.cap 主机ip地址(连接DUT获取的ip)（提取.cap）tftp -g -r 名字.cap 主机ip地址往DU">
+<meta name="description" content="title:tcpdump#tcpdumptitle: tcpdumpdate: 2019-01-05 08:41:05 tags:抓包测试关于tcpdump的一些应用：日常应用tcpdump -D看可以监听的端口tcpdump -i br-lan -w  名字.captftp -p -r 名字.cap 主机ip地址(连接DUT获取的ip)（提取.cap）tftp -g -r 名字.cap 主机">
 <meta property="og:type" content="article">
-<meta property="og:title" content="�޿�">
+<meta property="og:title" content="邹俊">
 <meta property="og:url" content="http://yoursite.com/2019/01/05/tcpdump/index.html">
-<meta property="og:site_name" content="�޿�">
-<meta property="og:description" content="title:tcpdump title: tcpdumpdate: 2019-01-05 08:41:05 tags:抓包测试关于tcpdump的一些应用：日常应用tcpdump -D看可以监听的端口tcpdump -i br-lan -w  名字.captftp -p -r 名字.cap 主机ip地址(连接DUT获取的ip)（提取.cap）tftp -g -r 名字.cap 主机ip地址往DU">
+<meta property="og:site_name" content="邹俊">
+<meta property="og:description" content="title:tcpdump#tcpdumptitle: tcpdumpdate: 2019-01-05 08:41:05 tags:抓包测试关于tcpdump的一些应用：日常应用tcpdump -D看可以监听的端口tcpdump -i br-lan -w  名字.captftp -p -r 名字.cap 主机ip地址(连接DUT获取的ip)（提取.cap）tftp -g -r 名字.cap 主机">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-05T01:01:12.590Z">
+<meta property="og:updated_time" content="2019-01-05T01:20:41.641Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="�޿�">
-<meta name="twitter:description" content="title:tcpdump title: tcpdumpdate: 2019-01-05 08:41:05 tags:抓包测试关于tcpdump的一些应用：日常应用tcpdump -D看可以监听的端口tcpdump -i br-lan -w  名字.captftp -p -r 名字.cap 主机ip地址(连接DUT获取的ip)（提取.cap）tftp -g -r 名字.cap 主机ip地址往DU">
+<meta name="twitter:title" content="邹俊">
+<meta name="twitter:description" content="title:tcpdump#tcpdumptitle: tcpdumpdate: 2019-01-05 08:41:05 tags:抓包测试关于tcpdump的一些应用：日常应用tcpdump -D看可以监听的端口tcpdump -i br-lan -w  名字.captftp -p -r 名字.cap 主机ip地址(连接DUT获取的ip)（提取.cap）tftp -g -r 名字.cap 主机">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title> | �޿�</title>
+  <title> | 邹俊</title>
   
 
 
@@ -155,7 +155,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">�޿�</span>
+        <span class="site-title">邹俊</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -241,7 +241,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="�޿�">
+      <meta itemprop="name" content="邹俊">
     </span>
 
     
@@ -300,8 +300,7 @@
 
       
         <hr>
-<h2 id="title-tcpdump"><a href="#title-tcpdump" class="headerlink" title="title:tcpdump"></a>title:tcpdump</h2><hr>
-<p>title: tcpdump<br>date: 2019-01-05 08:41:05</p>
+<h2 id="title-tcpdump"><a href="#title-tcpdump" class="headerlink" title="title:tcpdump"></a>title:tcpdump</h2><h2 id="tcpdump"><a href="#tcpdump" class="headerlink" title="#tcpdump"></a>#tcpdump</h2><p>title: tcpdump<br>date: 2019-01-05 08:41:05</p>
 <h2 id="tags-抓包测试"><a href="#tags-抓包测试" class="headerlink" title="tags:抓包测试"></a>tags:抓包测试</h2><p>关于tcpdump的一些应用：<br>日常应用tcpdump -D看可以监听的端口<br>tcpdump -i br-lan -w  名字.cap<br>tftp -p -r 名字.cap 主机ip地址(连接DUT获取的ip)（提取.cap）<br>tftp -g -r 名字.cap 主机ip地址往DUT里放文件  </p>
 <p>tcpdump [ -DenNqvX ] [ -c count ] [ -F file ] [ -i interface ] [ -r file ]<br>        [ -s snaplen ] [ -w file ] [ expression ]</p>
 <p>抓包选项：<br>-c：指定要抓取的包数量。注意，是最终要获取这么多个包。例如，指定”-c 10”将获取10个包，但可能已经处理了100个包，只不过只有10个包是满足条件的包。<br>-i interface：指定tcpdump需要监听的接口。若未指定该选项，将从系统接口列表中搜寻编号最小的已配置好的接口(不包括loopback接口，要抓取loopback接口使用tcpdump -i lo)，<br>            ：一旦找到第一个符合条件的接口，搜寻马上结束。可以使用’any’关键字表示所有网络接口。<br>-n：对地址以数字方式显式，否则显式为主机名，也就是说-n选项不做主机名解析。<br>-nn：除了-n的作用外，还把端口显示为数值，否则显示端口服务名。<br>-N：不打印出host的域名部分。例如tcpdump将会打印’nic’而不是’nic.ddn.mil’。<br>-P：指定要抓取的包是流入还是流出的包。可以给定的值为”in”、”out”和”inout”，默认为”inout”。<br>-s len：设置tcpdump的数据包抓取长度为len，如果不设置默认将会是65535字节。对于要抓取的数据包较大时，长度设置不够可能会产生包截断，若出现包截断，<br>      ：输出行中会出现”[|proto]”的标志(proto实际会显示为协议名)。但是抓取len越长，包的处理时间越长，并且会减少tcpdump可缓存的数据包的数量，<br>      ：从而会导致数据包的丢失，所以在能抓取我们想要的包的前提下，抓取长度越小越好。  </p>
@@ -453,7 +452,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-tcpdump"><span class="nav-number">1.</span> <span class="nav-text">title:tcpdump</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tags-抓包测试"><span class="nav-number">2.</span> <span class="nav-text">tags:抓包测试</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-tcpdump"><span class="nav-number">1.</span> <span class="nav-text">title:tcpdump</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tcpdump"><span class="nav-number">2.</span> <span class="nav-text">#tcpdump</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tags-抓包测试"><span class="nav-number">3.</span> <span class="nav-text">tags:抓包测试</span></a></li></ol></div>
             
 
           </div>
