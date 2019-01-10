@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ftp搭建]]></title>
+    <url>%2F2019%2F01%2F10%2Fftp%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[因为解决问题需要先复现然后从中找到问题所在，在复现的时候搜集问题帮助分析问题。这是很关键的有的时候为了印证自己的猜想，在代码中加入打印，去寻求解决问题的方法。有的ｂｕｇ需要特殊的环境。往往很多时候需要去ＱＡ寻求帮助，使用他们的环境，这样就很不方便，延长了解决问题的时间。所以需要自己去搭建环境，来加快问题的解决。 在第一天，使用QA的光盘搭建了Ubuntu和win7的双系统，其实这也是为了之后考虑，所以留下了原有的win7系统。这里使用的是Ubuntu１４，没有升级到最新的版本。 先搭建的是ＦＴＰ，搭建的过程先是经历了没网，后来将主机抱到实验室的有网环境下，将软件包下载完成后，按照设置要求搭建好，中途主要遇见的问题是权限，打开ｃｏｎｆ文件编写后想将其保存后，一直提醒没有备份确定保存改变吗的询问，及时你点是。此时依旧会继续弹出提醒，是个死循环。解决的办法就是在控制台里，用权限打开sudo gedit /etc 之类的这样编辑后，你点图形界面的保存就好了。如果只是单纯的点击图形界面会有一些问题。以及安装好后的530login问题，我找到的原因是因为Ubuntu启用PAM，在用到vsftp时需要用到/etc/pam.d/vsftpd这个文件（源码默认不安装），因此在我关闭匿名登录权限的时候，所有用户都登陆不了。这里删除就好。 sudo apt-get remove vsftpd sudo rm /etc/pam.d/vsftpd sudo apt-get install vsftpd]]></content>
+      <tags>
+        <tag>ftp</tag>
+        <tag>服务器</tag>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[路由器模式]]></title>
     <url>%2F2019%2F01%2F08%2F%E8%B7%AF%E7%94%B1%E5%99%A8%E6%A8%A1%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[1：Access Point（纯AP模式） 纯AP接入点模式，支持802.11b 11MBps或802.11b+ 22MBps的无线网卡接入 2：Wireless Client（网桥模式 ） 跟任何AP桥接的网桥模式。用Site Survey（信号搜索）把对方AP或无线路由的SSID搜索出来，然后点击Connect连接上去，就是这么简单！(工作在这个模式DWL-900AP+就不会再发射信号出来了，只会接收其他AP或无线路由的无线信号然后把无线信号转成有线信号，就象是一个用LAN口无需驱动的无线网卡一样)(无线网桥模式，适用卫星共享，XBOX PS2接入无线网络或当免驱动无线网卡给台式机使用） 3:Wireless Bridge（AP到AP无线桥接 ） 支持两个AP进行无线桥接模式来连通两个不同的局域网，设置桥接模式只要将对方AP的MAC码填进自己AP的“Wireless Bridge”项就可以了，这个模式不会再发射无线信号给其他的无线客户接收。（适合两栋建筑物之间无线通讯使用） 4：Multi-point Bridge（多AP桥接） 支持两个以上的AP进行无线桥接，将放在中心位置的AP选 “Multiple Bridge”（多AP桥接）然后其他AP统一将中心位置的AP的MAC码填进自己的“Wireless Bridge”项就可以。（适合多栋建筑物之间无线通讯使用） 5:Repeater(万能无线信号中继) 支持两台AP之间无线信号中继增强无线距离，或中继其他牌子的无线路由或AP，无论11M 22M 54M 108M都可以中继，已经测试过很多牌子的无线路由和AP，没有发现不兼容的。只要将AP置成Repeater(无线信号中继)、然后用Wireless Client项的Site Survey（信号搜索）搜索附近的AP或其他无线路由的SSID连接上去，然后把对方AP或无线路由的MAC复制到这台AP的Repeater Remote AP MAC栏就可以。只要其他AP或无线路由接上宽带，它就可以接收无线信号再把减弱了的无线信号再放大发送出去，适合距离比较远的无线客户端作信号放大使用，或用来做无线桥接然后再发射信号给无线网卡接收。 (注意！中继其他无线AP或路由时双方的Performance(无线效能值)里面的选项请都填写一样，其中的Preamble Type（前导帧模式）请选Long Preamble（长前导帧），TX Rates选 1-2-5.5-11(Mbps)兼容性会好点)]]></content>
