@@ -5,8 +5,8 @@
     <url>%2F2019%2F01%2F21%2F%E5%85%B3%E4%BA%8Eauto-firmware-debug%E7%9A%84%E8%AE%B0%E5%BD%95%2F</url>
     <content type="text"><![CDATA[上周主要的工作就是debug auto firmware功能，QA那边报出的bug是不能正常实现auto firmware upgrade功能，观看QA那边的log发现主要是没有办法正常将下载好的image更新，而在复现的时候肯定是不能让功能按照原有条件运行，因为auto firmware正常实现需要大约十小时闲时检测判断，没有办法立刻看到我们相要的结果，于是修改函数体的判断条件，设置一个参数（Genetest）,在nvram中设置这个值为0，当我们想测试时，将这个值设为1，这样，函数体判断条件满足，开始进行auto firmware upgrade。 因为相对来说debug经验不足，再加上对项目代码模块没有那么熟悉，所以前期是最困难的，没有什么好办法，读代码，请教项目经验的人，特别是当遇到函数逻辑本身没有什么太大问题，但我们不知道跑到那个函数体或者判断语句，甚至不知道为什么会跑到这里的时候，就用到了我们实际工作中经常用到的一项技能，加打印，因为我们的log是源自于console里，加的打印可以在console里很直观的看到，甚至运行的顺序都可以间接的体现出来，这对我们理解功能和代码有巨大的帮助。 cprintf(&quot;Gene debug %s(%d):\n&quot;,__FUNCTION__,__LINE__); 这一小句看似简单的代码，对于debug的过程起到了巨大作用，其实对于我们这种做通讯产品的，在debug过程还有个巨大作用的工具，就会说抓包工具，我们主要用的是wireshark软件和tcpdump指令，当设计抓无线包时就要用到tcpdump指令。 也许解决一个bug可能就是加几行代码或者修改一个数值，可是找到问题所在的过程却往往是考验熟练度和天赋经验的时候，希望自己能早点熟悉。]]></content>
       <categories>
-        <category>debug</category>
         <category>bug</category>
+        <category>debug</category>
       </categories>
       <tags>
         <tag>debug</tag>
