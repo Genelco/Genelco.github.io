@@ -3,13 +3,13 @@
   <entry>
     <title><![CDATA[soap学习]]></title>
     <url>%2F2019%2F01%2F28%2Fsoap%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[soap是一种简单的基于XML的协议，它使应用程序通过HTTP来交换信息。 SOAP 指简易对象访问协议 SOAP 是一种通信协议 SOAP 用于应用程序之间的通信 SOAP 是一种用于发送消息的格式 SOAP 被设计用来通过因特网进行通信 SOAP 独立于平台 SOAP 独立于语言 SOAP 基于 XML SOAP 很简单并可扩展 SOAP 允许您绕过防火墙 SOAP 将被作为 W3C 标准来发展]]></content>
+    <content type="text"><![CDATA[soap是一种简单的基于XML的协议，它使应用程序通过HTTP来交换信息。 SOAP 指简易对象访问协议（Simple Object Access Protocol） SOAP 是一种通信协议 SOAP 用于应用程序之间的通信 SOAP 是一种用于发送消息的格式 SOAP 被设计用来通过因特网进行通信 SOAP 独立于平台 SOAP 独立于语言 SOAP 基于 XML SOAP 很简单并可扩展 SOAP 允许您绕过防火墙 SOAP 将被作为 W3C 标准来发展 对于应用程序开发来说，使程序之间进行因特网通信是很重要的。 目前的应用程序通过使用远程过程调用（RPC）在诸如DCOM与CORBA等对象之间进行通信，但是HTTP不是为此设计的。RPC会产生兼容性以及安全问题；防火墙和代理服务器通常会阻止此类流量。 通过HTTP在应用程序间的通信是更好的方法，因为HTTP得到了所有的因特网浏览器及服务器的支持。SOAP就是被创造出来完成这个任务的。 SOAP提供了一种标准的方法，使得运行在不同操作系统并使用不同的技术和编程语言的应用程序可以互相进行通信。 –未完–]]></content>
       <categories>
         <category>基础知识</category>
       </categories>
       <tags>
-        <tag>基础学习</tag>
         <tag>soap</tag>
+        <tag>基础学习</tag>
       </tags>
   </entry>
   <entry>
@@ -33,8 +33,8 @@
         <category>基础知识</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>基础学习</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
