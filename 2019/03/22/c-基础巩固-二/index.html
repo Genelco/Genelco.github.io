@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Git,基础学习,">
+  <meta name="keywords" content="基础学习,C++,">
 
 
 
@@ -86,20 +86,23 @@
 
 
 
-<meta name="description" content="在没有迫切事物需要处理的时候，学习和巩固最基础的知识对以后的工作肯定是有帮助的，哪怕学的是很杂的东西，积少成多，集腋成裘。　　公司用的是svn，所以对svn有些了解，而现在主流的是git，女友说过，当初她希望我搭建github博客的初衷也是希望我能熟练掌握git，这样对以后换到新的单位，也能很快熟悉工作环境。于是今天开始，系统的学习一下git的相关知识。　　首先就要知道Git和SVN的区别，其">
-<meta name="keywords" content="Git,基础学习">
+<meta name="description" content="C++的标准输入输出　　.包含头文件#include　　.cout是标准输入输出变量（对象），代表控制台窗口　　.&amp;lt;&amp;lt;是一个运算符，假如o是一个输出流对象。x是一个数据 o&amp;lt;&amp;lt;x　　.cout是标准名字空间std的一个名字。必须加上名字空间限定std::（之所以需要加上名字空间是因为可能会有多个库都有例如print之类的存在，如果不指定，不知调用哪个，防止名字冲突的可能）">
+<meta name="keywords" content="基础学习,C++">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git相关学习 day 1">
-<meta property="og:url" content="http://genelco.github.io/2019/01/15/Git相关学习-day-1/index.html">
+<meta property="og:title" content="c++基础巩固(二)">
+<meta property="og:url" content="http://genelco.github.io/2019/03/22/c-基础巩固-二/index.html">
 <meta property="og:site_name" content="邹俊">
-<meta property="og:description" content="在没有迫切事物需要处理的时候，学习和巩固最基础的知识对以后的工作肯定是有帮助的，哪怕学的是很杂的东西，积少成多，集腋成裘。　　公司用的是svn，所以对svn有些了解，而现在主流的是git，女友说过，当初她希望我搭建github博客的初衷也是希望我能熟练掌握git，这样对以后换到新的单位，也能很快熟悉工作环境。于是今天开始，系统的学习一下git的相关知识。　　首先就要知道Git和SVN的区别，其">
+<meta property="og:description" content="C++的标准输入输出　　.包含头文件#include　　.cout是标准输入输出变量（对象），代表控制台窗口　　.&amp;lt;&amp;lt;是一个运算符，假如o是一个输出流对象。x是一个数据 o&amp;lt;&amp;lt;x　　.cout是标准名字空间std的一个名字。必须加上名字空间限定std::（之所以需要加上名字空间是因为可能会有多个库都有例如print之类的存在，如果不指定，不知调用哪个，防止名字冲突的可能）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://i.imgur.com/tJwCilP.png">
-<meta property="og:updated_time" content="2019-01-15T08:39:27.943Z">
+<meta property="og:image" content="https://i.imgur.com/2P1lj9a.png">
+<meta property="og:image" content="https://i.imgur.com/yQmMbdZ.png">
+<meta property="og:image" content="https://i.imgur.com/YeASGS3.png">
+<meta property="og:image" content="https://i.imgur.com/V3xETXF.png">
+<meta property="og:updated_time" content="2019-03-22T07:27:51.896Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git相关学习 day 1">
-<meta name="twitter:description" content="在没有迫切事物需要处理的时候，学习和巩固最基础的知识对以后的工作肯定是有帮助的，哪怕学的是很杂的东西，积少成多，集腋成裘。　　公司用的是svn，所以对svn有些了解，而现在主流的是git，女友说过，当初她希望我搭建github博客的初衷也是希望我能熟练掌握git，这样对以后换到新的单位，也能很快熟悉工作环境。于是今天开始，系统的学习一下git的相关知识。　　首先就要知道Git和SVN的区别，其">
-<meta name="twitter:image" content="https://i.imgur.com/tJwCilP.png">
+<meta name="twitter:title" content="c++基础巩固(二)">
+<meta name="twitter:description" content="C++的标准输入输出　　.包含头文件#include　　.cout是标准输入输出变量（对象），代表控制台窗口　　.&amp;lt;&amp;lt;是一个运算符，假如o是一个输出流对象。x是一个数据 o&amp;lt;&amp;lt;x　　.cout是标准名字空间std的一个名字。必须加上名字空间限定std::（之所以需要加上名字空间是因为可能会有多个库都有例如print之类的存在，如果不指定，不知调用哪个，防止名字冲突的可能）">
+<meta name="twitter:image" content="https://i.imgur.com/2P1lj9a.png">
 
 
 
@@ -129,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://genelco.github.io/2019/01/15/Git相关学习-day-1/">
+  <link rel="canonical" href="http://genelco.github.io/2019/03/22/c-基础巩固-二/">
 
 
 
 
 
-  <title>Git相关学习 day 1 | 邹俊</title>
+  <title>c++基础巩固(二) | 邹俊</title>
   
 
 
@@ -304,7 +307,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://genelco.github.io/2019/01/15/Git相关学习-day-1/">
+    <link itemprop="mainEntityOfPage" href="http://genelco.github.io/2019/03/22/c-基础巩固-二/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Gene Zou">
@@ -321,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Git相关学习 day 1</h1>
+          <h1 class="post-title" itemprop="name headline">c++基础巩固(二)</h1>
         
 
         <div class="post-meta">
@@ -333,8 +336,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T15:56:32+08:00">
-                2019-01-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-22T13:59:38+08:00">
+                2019-03-22
               </time>
             
 
@@ -387,7 +390,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  890
+                  2.2k
                 </span>
               
 
@@ -403,7 +406,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  7
                 </span>
               
             </div>
@@ -424,7 +427,13 @@
       
 
       
-        <p>　　在没有迫切事物需要处理的时候，学习和巩固最基础的知识对以后的工作肯定是有帮助的，哪怕学的是很杂的东西，积少成多，集腋成裘。<br>　　公司用的是svn，所以对svn有些了解，而现在主流的是git，女友说过，当初她希望我搭建github博客的初衷也是希望我能熟练掌握git，这样对以后换到新的单位，也能很快熟悉工作环境。于是今天开始，系统的学习一下git的相关知识。<br>　　首先就要知道Git和SVN的区别，其实最主要的区别就是分布式和集中式的区别。<br>　　Git是分布式的，在本地有镜像，没有网络的时候也可以提交给本地镜像，待到有网络的时候，再push。每个人的电脑都是一个完整的版本库，彼此之间只需要将各自的修改推送给对方就好了。其实按照这套理论Git是不需要中央服务器的，但通常会设置一个这是为了防止一些情况的发生，例如同事生病没来之类的电脑压根没有开机。<br>　　SVN是集中式的，无网络不可以提交。必须要联网，如果是内网稳定还好，如果在互联网上网速慢的话，往往会影响工作效率。<br>　　下面还找了一些其他版本控制系统的简单介绍，丰富下认知。<br>　　<img src="https://i.imgur.com/tJwCilP.png" alt=""><br>　　版本库又名仓库，英文repository。在版本库里的所有文件都被Git管控起来，每次修改删除添加都会被记录下来，可以追踪历史，也可以还原。<br>　　所以建立一个版本库非常简单，首先找一个合适的地方，创建一个空目录：<br>　　<code>$ mkdir learngit</code><br>　　<code>$ cd learngit</code><br>　　<code>$ pwd</code><br>　　<code>/Users/gene/learngit</code><br>　　第二步，通过git init命令把这个目录变成Git可以管理的仓库：<br>　　<code>$ git init</code><br>　　目录名为了避免不必要的麻烦，尽量不要使用中文。<br>　　千万不要使用Windows自带的记事本编辑任何文本文件。原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，你会遇到很多不可思议的问题，比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等，都是由记事本的弱智行为带来的。建议你下载Notepad++代替记事本，不但功能强大，而且免费！记得把Notepad++的默认编码设置为UTF-8 without BOM即可。<br>　　把一个文件放到Git仓库只需要两步。<br>　　第一步，用git add告诉git，把文件添加到仓库：<br>　　<code>$ git add readme.txt</code><br>　　第二步，用命令git commit告诉Git，把文件提交到仓库：<br>　　<code>$ git commit -m &quot;wrote a readme file&quot;</code><br>　　<code>[master (root-commit) eaadf4e] wrote a readme file</code><br> 　　<code>1 file changed, 2 insertions(+)</code><br> 　　<code>create mode 100644 readme.txt</code><br>　　简单解释一下git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。<br>　　git commit命令执行成功后会告诉你，1 file changed：1个文件被改动（我们新添加的readme.txt文件）；2 insertions：插入了两行内容（readme.txt有两行内容）。</p>
+        <h2 id="C-的标准输入输出"><a href="#C-的标准输入输出" class="headerlink" title="C++的标准输入输出"></a>C++的标准输入输出</h2><p>　　.包含头文件#include<iostream><br>　　.cout是标准输入输出变量（对象），代表控制台窗口<br>　　.&lt;&lt;是一个运算符，假如o是一个输出流对象。x是一个数据 o&lt;&lt;x<br>　　.cout是标准名字空间std的一个名字。必须加上名字空间限定std::（之所以需要加上名字空间是因为可能会有多个库都有例如print之类的存在，如果不指定，不知调用哪个，防止名字冲突的可能）<br>　　可是如果每个都写的话可能有点麻烦，这里有两种解决办法：<br>　　1.使用using std::cout<br>　　2.也可以引用整个名字空间： using namespace std；  </iostream></p>
+<h2 id="C-多态机制的实现"><a href="#C-多态机制的实现" class="headerlink" title="C++多态机制的实现"></a>C++多态机制的实现</h2><p>　　(1)重载：同一个类中同一个函数的不同实现，必须保证函数参数不同（类型，个数，顺序），本质上与多态无关。使用重载函数，编译器会根据函数的名称和参数定义来生成函数的内部标识符，保证每个函数的标识符是唯一的，这样在链接时就可以链接到对应的函数。重载属于静态绑定，在编译过程中就能确定调用哪一个函数，是早期绑定，与多态原理不同。<br>　　(2)覆盖：也称为重写，子类中对父类的同名函数同参数的重写，父类的函数必须设置为虚函数，这样保证使用基类指针或者引用指向不同的子类对象可以动态调用属于具体子类的方法而不是调用基类的方法，从而实现多态。<br>　　PS:C++中 多态一般默认是指动态多态（通过类继承机制和虚函数机制实现），是在运行时确定的，在面向对象编程中直接被称为多态，而静态多态一般是指使用函数重载或者模板机制实现的。模板也允许将不同的特殊行为和单个泛化记号相关联，由于这种关联处理于编译期而非运行期，因此被称为“静态”。可以用来实现类型安全、运行高效的同质对象集合操作。C++ 的STL库大量使用了模板机制来实现，而并没有使用虚函数机制，属于静态多态。  </p>
+<h2 id="队列和栈的共同点以及不同点"><a href="#队列和栈的共同点以及不同点" class="headerlink" title="队列和栈的共同点以及不同点"></a>队列和栈的共同点以及不同点</h2><p>　　队列：这里只说单向队列，就是我们平常所说的FIFO队列，它满足先进先出的规则，即只能在队尾插入元素，提取元素只能在队头。（C++里面提供了queue容器作为单向队列的实现）<br>　　栈：栈满足LIFO规则（后进先出），插入和取出操作只能在栈顶进行（C++提供了stack容器作为栈的实现）<br>　　相同点：都是线性表结构，并且只能在端点进行数据的插入和读取（受限制的线性表结构），都不能进行随机存取，都不支持遍历（不开临时空间），在C++ stl中可以采用deque作为两者的底层容器；<br>　　不同点：栈和队列的操作不同，栈只能在线性表的一端进行插入和删除，而队列则是只能在表的一端进行插入，在另一端进行删除；栈符合LIFO原则，而队列符合FIFO原则，即满足队列的操作原则；  </p>
+<h2 id="C-内存模型"><a href="#C-内存模型" class="headerlink" title="C++内存模型"></a>C++内存模型</h2><p>　　一般来说，一个C++程序所分配的内存空间主要分为五个部分：堆、栈、静态存储区、代码段<br>　　根据C++中类的情况，可以分为以下几种情况：<br>　　单一类：<br>　　(1)空类：占据一个字节，用于标识这个类是一个空类，没有实际含义，使用sizeof操作符可以看到大小为1个字节。<br>　　<img src="https://i.imgur.com/2P1lj9a.png" alt=""><br>　　(2)只有成员变量的类：该类的大小为所有普通成员变量所占据的内存大小的和（静态成员变量并不存放在对象的内存空间中），内存布局如下图所示，可以看出在内存中是按照变量声明的顺序存放的。<br>　　<img src="https://i.imgur.com/yQmMbdZ.png" alt=""><br>　　(3)只有虚函数的类：根据虚函数的实现机制，该类的对象所占据的内存只有一个虚函数表指针（vfptr)，指向一个虚函数表，该表按照函数的声明顺序存储着虚函数的函数指针。内存布局如下所示：<br>　　<img src="https://i.imgur.com/YeASGS3.png" alt=""><br>　　 (4)既有虚函数，又有成员变量的类：这样的类的对象内存中既有虚函数表指针，又有成员变量（按照声明的顺序存放），内存布局如下图所示：<br>　　<img src="https://i.imgur.com/V3xETXF.png" alt="">  </p>
+<h2 id="C-inline原理"><a href="#C-inline原理" class="headerlink" title="C++ inline原理"></a>C++ inline原理</h2><p>　　inline是C++的一种机制，作用于函数，将一个函数声明为inline，可以让编译器在编译代码时，将“对此函数的每一个调用”都以函数本体替换之，该过程发生在编译期间。inline的优点是：它可以省去函数调用所带来的额外开销，提高程序的速度。缺点也很明显：首先，过分使用inline函数会导致代码膨胀，占用过多内存和硬盘空间；其次，在升级inline函数时，需要所有引用它的模块都要重新编译。<br>　　综合以上说明，inline一般用于函数体比较小，频繁切换的函数上面。另外需要强调的一点是，千万不要将构造或析构函数inline。原因是，这种函数往往看起来是空的，而实际上在编译期间会生成很多代码，如果将它们inline了，很容易就会导致代码膨胀。   </p>
+<h2 id="define和const的区别"><a href="#define和const的区别" class="headerlink" title="define和const的区别"></a>define和const的区别</h2><p>　　const是定义了一种数据类型，被其修饰的变量会被系统分配内存空间，存放在静态存储区，在编译时会进行类型检查，而define定义的常量本质上是一种宏替换，不是一种数据类型，系统不会为其分配内存空间，宏定义的常量在预处理的时候会被替换，不会进行类型检查。  </p>
+<h2 id="虚继承和虚基类表、虚基类表指针"><a href="#虚继承和虚基类表、虚基类表指针" class="headerlink" title="虚继承和虚基类表、虚基类表指针"></a>虚继承和虚基类表、虚基类表指针</h2><p>　　虚继承是为了解决多重继承中派生类对象内存同时存在多份虚基类的实体而提出的，当使用虚继承时，派生类中最多保存一份虚基类的实体，但是需要在内存中增加虚基类表指针。<br>　　虚继承和虚函数是完全无相关的两个概念。虚继承是解决C++多重继承问题的一种手段，从不同途径继承来的同一基类，会在子类中存在多份拷贝。这将存在两个问题：其一，浪费存储空间；第二，存在二义性问题，通常可以将派生类对象的地址赋值给基类对象，实现的具体方式是，将基类指针指向继承类（继承类有基类的拷贝）中的基类对象的地址，但是多重继承可能存在一个基类的多份拷贝，这就出现了二义性。<br>　　虚继承可以解决多种继承前面提到的两个问题：虚继承底层实现原理与编译器相关，一般通过虚基类指针和虚基类表实现，每个虚继承的子类都有一个虚基类指针（占用一个指针的存储空间，4字节）和虚基类表（不占用类对象的存储空间）（需要强调的是，虚基类依旧会在子类里面存在拷贝，只是仅仅最多存在一份而已，并不是不在子类里面了）；当虚继承的子类被当做父类继承时，虚基类指针也会被继承。<br>　　实际上，vbptr指的是虚基类表指针，该指针指向了一个虚基类表，虚表中记录了虚基类与本类的偏移地址；通过偏移地址，这样就找到了虚基类成员，而虚继承也不用像普通多继承那样维持着公共基类（虚基类）的两份同样的拷贝，节省了存储空间。<br>　　在这里我们可以对比虚函数的实现原理：他们有相似之处，都利用了虚指针（均占用类的存储空间）和虚表（均不占用类的存储空间）。<br>　　虚基类依旧存在继承类中，只占用存储空间；虚函数不占用存储空间。<br>　　虚基类表存储的是虚基类相对直接继承类的偏移；而虚函数表存储的是虚函数地址。<br>　　——————————未完——————————</p>
 
       
     </div>
@@ -445,7 +454,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://genelco.github.io/2019/01/15/Git相关学习-day-1/" title="Git相关学习 day 1">http://genelco.github.io/2019/01/15/Git相关学习-day-1/</a>
+    <a href="http://genelco.github.io/2019/03/22/c-基础巩固-二/" title="c++基础巩固(二)">http://genelco.github.io/2019/03/22/c-基础巩固-二/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -460,9 +469,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
-          
             <a href="/tags/基础学习/" rel="tag"><i class="fa fa-tag"></i> 基础学习</a>
+          
+            <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C++</a>
           
         </div>
       
@@ -475,8 +484,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/12/QQ浏览器被2345劫持/" rel="next" title="QQ浏览器被2345劫持">
-                <i class="fa fa-chevron-left"></i> QQ浏览器被2345劫持
+              <a href="/2019/03/16/GFW长城防火墙/" rel="next" title="GFW长城防火墙">
+                <i class="fa fa-chevron-left"></i> GFW长城防火墙
               </a>
             
           </div>
@@ -484,10 +493,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/21/关于auto-firmware-debug的记录/" rel="prev" title="关于auto firmware debug的记录">
-                关于auto firmware debug的记录 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -539,8 +544,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -602,6 +616,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#C-的标准输入输出"><span class="nav-number">1.</span> <span class="nav-text">C++的标准输入输出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-多态机制的实现"><span class="nav-number">2.</span> <span class="nav-text">C++多态机制的实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#队列和栈的共同点以及不同点"><span class="nav-number">3.</span> <span class="nav-text">队列和栈的共同点以及不同点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-内存模型"><span class="nav-number">4.</span> <span class="nav-text">C++内存模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-inline原理"><span class="nav-number">5.</span> <span class="nav-text">C++ inline原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#define和const的区别"><span class="nav-number">6.</span> <span class="nav-text">define和const的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#虚继承和虚基类表、虚基类表指针"><span class="nav-number">7.</span> <span class="nav-text">虚继承和虚基类表、虚基类表指针</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
