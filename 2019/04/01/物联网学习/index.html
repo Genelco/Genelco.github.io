@@ -95,7 +95,7 @@
 <meta property="og:description" content="这几天除了c语言的温故知新，还在学习有关物联网方面的知识，想着由浅入深，工作是路由器和中继器的开发，在平时的工作中渐渐体会到通讯最后的趋势是万物连接。生活工作以及社会的方方面面之间都会产生联系。而沟通连接所必须的就是各种通信协议，除了当初计算机网络学到的那些osi体系中最基本的通信协议，有关物联网方面还有一些新的协议，以前没有接触过，现在想学习一下，一是拓宽眼界，不能只满足于工作的需求，二是相">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ww1.sinaimg.cn/large/007i4MEmly1g1n5orr1ybj30od08h3yz.jpg">
-<meta property="og:updated_time" content="2019-04-01T07:31:02.499Z">
+<meta property="og:updated_time" content="2019-04-01T08:52:59.145Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="物联网学习">
 <meta name="twitter:description" content="这几天除了c语言的温故知新，还在学习有关物联网方面的知识，想着由浅入深，工作是路由器和中继器的开发，在平时的工作中渐渐体会到通讯最后的趋势是万物连接。生活工作以及社会的方方面面之间都会产生联系。而沟通连接所必须的就是各种通信协议，除了当初计算机网络学到的那些osi体系中最基本的通信协议，有关物联网方面还有一些新的协议，以前没有接触过，现在想学习一下，一是拓宽眼界，不能只满足于工作的需求，二是相">
@@ -387,7 +387,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  899
+                  921
                 </span>
               
 
@@ -426,7 +426,7 @@
       
         <p>　　这几天除了c语言的温故知新，还在学习有关物联网方面的知识，想着由浅入深，工作是路由器和中继器的开发，在平时的工作中渐渐体会到通讯最后的趋势是万物连接。生活工作以及社会的方方面面之间都会产生联系。而沟通连接所必须的就是各种通信协议，除了当初计算机网络学到的那些osi体系中最基本的通信协议，有关物联网方面还有一些新的协议，以前没有接触过，现在想学习一下，一是拓宽眼界，不能只满足于工作的需求，二是相对来说，单纯路由器中继器相关的工作比较难找，为了未来，我觉得从事物联网方面可能是个不错的选择。智连将改变世界，每个人都将是一个终端。<br>　　先前有初步理解MQTT协议，还有一些协议以及他们的特色是适合使用的场景都将在接下的几天进行系统的学习。下面列出一些其他协议之间的一些区别，帮助快速导入。  </p>
 <h2 id="CoAP和MQTT"><a href="#CoAP和MQTT" class="headerlink" title="CoAP和MQTT"></a>CoAP和MQTT</h2><p>　　.MQTT协议使用发布/订阅模型，CoAP协议使用请求/响应模型；<br>　　.MQTT是长连接，CoAP协议是无连接。MQTT Clients与Broker之间保持TCP长连接，这种情形在NAT环境中也不会产生问题。如果在NAT环境下使用CoAP的话，那就需要采取一些NAT穿透性手段。；<br>　　.MQTT通过中间代理传递消息的多对多协议，它主要通过让客户端发布消息、代理决定消息路由和复制来解耦消费者和生产者。CoAP协议是Server和Client之间消息传递的单对单协议,MQTT就是相当于消息传递的实时通讯总线；<br>　　.MQTT不支持带有类型或者其它帮助Clients理解的标签消息，CoAP内置内容协商和发现支持，允许设备彼此窥测以找到交换数据的方式。<br>　　.MQTT协议是基于TCP，而CoAP协议是基于UDP。  </p>
-<h2 id="HTTP和CoAP"><a href="#HTTP和CoAP" class="headerlink" title="HTTP和CoAP"></a>HTTP和CoAP</h2><p>　　．HTTP代表超文本传输协议，CoAP代表约束应用协议；<br>　　．HTTP协议的传输层采用了TCP，CoAP协议的传输层使用UDP；<br>　　．CoAP协议是HTTP协议的简化版；<br>　　．CoAP协议和HTTP协议一样使用请求/响应模型，拥有相同的方法；<br>　　．CoAP开销更低，并支持多播；<br>　　．CoAP专为资源构成应用而设计，如：IoT/WSN/M2M等…<br>　　．CoAP是6LowPAN协议栈中的应用层协议，基于REST（表述性状态传递）架构风格，支持与REST进行交互。通常用户可以像使用HTTP协议一样用CoAP协议来访问物联网设备。而且CoAP消息格式使用简单的二进制格式，最小为4个字节。HTTP使用报文格式对于嵌入式设备来说需要传输数据太多，太重，不够灵活。（ps：6LoWPAN是一种基于IPv6的低速无线个域网标准，即IPv6 over IEEE 802.15.4在查阅之前对这个没有什么印象，可是发现与他相似的有我们学习过的ZigBee协议栈。可是6LoWPAN很有吸引力，因为它基于互联网协议的IP标准工作）<br>　　<img src="https://ww1.sinaimg.cn/large/007i4MEmly1g1n5orr1ybj30od08h3yz.jpg" alt=""><br>　　同时找到之前几篇文章图片添加后不显示的原因，因为Markdownpad里面带的添加图片所使用的图床貌似不可以用了，原因未知，不只是否被墙了。</p>
+<h2 id="HTTP和CoAP"><a href="#HTTP和CoAP" class="headerlink" title="HTTP和CoAP"></a>HTTP和CoAP</h2><p>　　．HTTP代表超文本传输协议，CoAP代表约束应用协议；<br>　　．HTTP协议的传输层采用了TCP，CoAP协议的传输层使用UDP；<br>　　．CoAP协议是HTTP协议的简化版；<br>　　．CoAP协议和HTTP协议一样使用请求/响应模型，拥有相同的方法；<br>　　．CoAP开销更低，并支持多播；<br>　　．CoAP专为资源构成应用而设计，如：IoT/WSN/M2M等…<br>　　．CoAP是6LowPAN协议栈中的应用层协议，基于REST（表述性状态传递）架构风格，支持与REST进行交互。通常用户可以像使用HTTP协议一样用CoAP协议来访问物联网设备。而且CoAP消息格式使用简单的二进制格式，最小为4个字节。HTTP使用报文格式对于嵌入式设备来说需要传输数据太多，太重，不够灵活。（ps：6LoWPAN是一种基于IPv6的低速无线个域网标准，即IPv6 over IEEE 802.15.4在查阅之前对这个没有什么印象，可是发现与他相似的有我们学习过的ZigBee协议栈。可是6LoWPAN很有吸引力，因为它基于互联网协议的IP标准工作）<br>　　<img src="https://ww1.sinaimg.cn/large/007i4MEmly1g1n5orr1ybj30od08h3yz.jpg" alt=""><br>　　同时找到之前几篇文章图片添加后不显示的原因，因为Markdownpad里面自带的添加图片所使用的图床貌似不可以正常使用了，原因未知，不知是否被墙了或者其他原因。现在更换了图床，已经可以了。</p>
 
       
     </div>
