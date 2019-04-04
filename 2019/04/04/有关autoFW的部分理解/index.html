@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="之前一直没有解决Next主题添加代码格局混乱的问题，所以很多时候不太想添加代码。可是问题终究要解决。所以今天来解决这个问题，并且先记录一些关于自己在学习autoFW和autoFw debug过程中的一些心得体会。　　首先在别人的指导下知道了什么是autoFW，顾名思义就是自动升级，在用户选择允许自动升级之后，对应的nvram里面的auto_update_enable值就会被置为1。">
+<meta name="description" content="之前一直没有解决Next主题添加代码格局混乱的问题，所以很多时候不太想添加代码。可是问题终究要解决。所以今天来解决这个问题，并且先记录一些关于自己在学习autoFW和autoFw debug过程中的一些心得体会。　　首先在别人的指导下知道了什么是autoFW，顾名思义就是自动升级，在用户选择允许自动升级之后，对应的nvram里面的auto_update_enable值就会被置为1。   if(">
 <meta name="keywords" content="工作记录">
 <meta property="og:type" content="article">
 <meta property="og:title" content="有关autoFW的部分理解">
 <meta property="og:url" content="http://genelco.github.io/2019/04/04/有关autoFW的部分理解/index.html">
 <meta property="og:site_name" content="邹俊">
-<meta property="og:description" content="之前一直没有解决Next主题添加代码格局混乱的问题，所以很多时候不太想添加代码。可是问题终究要解决。所以今天来解决这个问题，并且先记录一些关于自己在学习autoFW和autoFw debug过程中的一些心得体会。　　首先在别人的指导下知道了什么是autoFW，顾名思义就是自动升级，在用户选择允许自动升级之后，对应的nvram里面的auto_update_enable值就会被置为1。">
+<meta property="og:description" content="之前一直没有解决Next主题添加代码格局混乱的问题，所以很多时候不太想添加代码。可是问题终究要解决。所以今天来解决这个问题，并且先记录一些关于自己在学习autoFW和autoFw debug过程中的一些心得体会。　　首先在别人的指导下知道了什么是autoFW，顾名思义就是自动升级，在用户选择允许自动升级之后，对应的nvram里面的auto_update_enable值就会被置为1。   if(">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-04T07:54:06.110Z">
+<meta property="og:updated_time" content="2019-04-04T08:07:02.885Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="有关autoFW的部分理解">
-<meta name="twitter:description" content="之前一直没有解决Next主题添加代码格局混乱的问题，所以很多时候不太想添加代码。可是问题终究要解决。所以今天来解决这个问题，并且先记录一些关于自己在学习autoFW和autoFw debug过程中的一些心得体会。　　首先在别人的指导下知道了什么是autoFW，顾名思义就是自动升级，在用户选择允许自动升级之后，对应的nvram里面的auto_update_enable值就会被置为1。">
+<meta name="twitter:description" content="之前一直没有解决Next主题添加代码格局混乱的问题，所以很多时候不太想添加代码。可是问题终究要解决。所以今天来解决这个问题，并且先记录一些关于自己在学习autoFW和autoFw debug过程中的一些心得体会。　　首先在别人的指导下知道了什么是autoFW，顾名思义就是自动升级，在用户选择允许自动升级之后，对应的nvram里面的auto_update_enable值就会被置为1。   if(">
 
 
 
@@ -385,7 +385,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.5k
+                  1.4k
                 </span>
               
 
@@ -422,7 +422,7 @@
       
 
       
-        <p>　　之前一直没有解决Next主题添加代码格局混乱的问题，所以很多时候不太想添加代码。可是问题终究要解决。所以今天来解决这个问题，并且先记录一些关于自己在学习autoFW和autoFw debug过程中的一些心得体会。<br>　　首先在别人的指导下知道了什么是autoFW，顾名思义就是自动升级，在用户选择允许自动升级之后，对应的nvram里面的auto_update_enable值就会被置为1。<br>        if(strcmp(val3,”1”)==0)<br>        {<br>            acosNvramConfig_set(“router_TC_enable”,”1”);<br>            acosNvramConfig_set(“auto_update_enable”,”1”);<br>        }<br>        else if (strcmp(val3,”0”)==0)<br>        {<br>            acosNvramConfig_set(“router_TC_enable”,”0”);<br>            acosNvramConfig_set(“auto_update_enable”,”0”);<br>        }<br>　　以及之后的这一段<br>    acosNvramConfig_set(“web_ra”,”1”);<br>    websGetVar(content, “ra_enable”, val);<br>    websGetVar(content, “auto_update_enable”, val3);</p>
+        <p>　　之前一直没有解决Next主题添加代码格局混乱的问题，所以很多时候不太想添加代码。可是问题终究要解决。所以今天来解决这个问题，并且先记录一些关于自己在学习autoFW和autoFw debug过程中的一些心得体会。<br>　　首先在别人的指导下知道了什么是autoFW，顾名思义就是自动升级，在用户选择允许自动升级之后，对应的nvram里面的auto_update_enable值就会被置为1。  </p>
 <pre><code>if(acosNvramConfig_match(&quot;TC_new&quot;,&quot;2&quot;))
 {
      if(strcmp(val3,&quot;1&quot;)==0)
@@ -445,7 +445,7 @@
         acosNvramConfig_save();
         system(&quot;killall -SIGUSR1 scheact&quot;); 
         acosNvramConfig_save();  
-</code></pre><p>　　首先产品会检测ntp是否同步，当同步后会去从服务器上下载fileinfo文件，净文件下载到tmp里命名为fileinfocfg，而这个fileinfo文件里面包含了服务器中存放的Fw的名称以及其MD5。接下来就是去安排更新时间，更新时间会是在当地时间凌晨一点到四点的一个随机时间，至于是星期几更新，这个是由产品的SN码决定的。之后就是等待，等到当前时间到达更新时间后第一件事就是先删除之前的tmp下面的fileinfocfg，用HTTPS的方式去重新下载服务器中最新的fileinfo，将其存至tmp下面，然后当状态检测部分的代码检测到他正在下载，会去等待两秒，如果下载好了，就会在console里面打印download cfg success。先进行版本比较，将最新版本和当前版本进行比较，如果只是n4级别的更新，那么就忽略，将自动更新时间设置为一周后的这一时间。如果是大于n4级别的重要更新那么就进入识别检测程序，检测是否有fileinfocfg中同一名字的chk文件，以及这个chk文件的Md5是否匹配，在检测之前他会下载一个strdat的文档，用来从中获取此次更新的FW相对于旧版本做出了哪些改变，（其实这个我觉得在autoFw这种用户看不到的升级形式下是可以省略的）。在服务器中chk和fileinfocfg信息相匹配的情况下会优先使用HTTPS的方式去下载FW（所有下载都会优先使用HTTPS的方式，FTP作为HTTPS无法使用时的备份方案），在下载完成后还会对下载的进行核查，这里会下载到tmp下命名为image.chk。之后就是将image写入flash中，在完成后重启产品。下面展示一小部分代码。<br>    static void init_check_fw_sche (void)<br>    {<br>    unsigned int rand_min;<br>    unsigned long system_time;<br>    struct tm t_local_time;<br>    struct tm *p_local_time = &t_local_time;<br>    char sn[SN_MAX_LEN + 1];<br>    char tail;<br>    int len = 0;<br>    bd_read_sn (sn, SN_MAX_LEN);</p>
+</code></pre><p>　　首先产品会检测ntp是否同步，当同步后会去从服务器上下载fileinfo文件，净文件下载到tmp里命名为fileinfocfg，而这个fileinfo文件里面包含了服务器中存放的Fw的名称以及其MD5。接下来就是去安排更新时间，更新时间会是在当地时间凌晨一点到四点的一个随机时间，至于是星期几更新，这个是由产品的SN码决定的。之后就是等待，等到当前时间到达更新时间后第一件事就是先删除之前的tmp下面的fileinfocfg，用HTTPS的方式去重新下载服务器中最新的fileinfo，将其存至tmp下面，然后当状态检测部分的代码检测到他正在下载，会去等待两秒，如果下载好了，就会在console里面打印download cfg success。先进行版本比较，将最新版本和当前版本进行比较，如果只是n4级别的更新，那么就忽略，将自动更新时间设置为一周后的这一时间。如果是大于n4级别的重要更新那么就进入识别检测程序，检测是否有fileinfocfg中同一名字的chk文件，以及这个chk文件的Md5是否匹配，在检测之前他会下载一个strdat的文档，用来从中获取此次更新的FW相对于旧版本做出了哪些改变，（其实这个我觉得在autoFw这种用户看不到的升级形式下是可以省略的）。在服务器中chk和fileinfocfg信息相匹配的情况下会优先使用HTTPS的方式去下载FW（所有下载都会优先使用HTTPS的方式，FTP作为HTTPS无法使用时的备份方案），在下载完成后还会对下载的进行核查，这里会下载到tmp下命名为image.chk。之后就是将image写入flash中，在完成后重启产品。下面展示一小部分代码。  </p>
 <pre><code>if (acosNvramConfig_match(&quot;check_fw_sche_test&quot;, &quot;1&quot;) &amp;&amp; acosNvramConfig_get(&quot;check_fw_sche_hour&quot;) &amp;&amp; acosNvramConfig_get(&quot;check_fw_sche_min&quot;))
 {
 sche_hour = atoi(acosNvramConfig_get(&quot;check_fw_sche_hour&quot;)) - 1;
@@ -508,8 +508,35 @@ ver_ver =
     sscanf (AMBIT_SOFTWARE_VERSION, &quot;V%d.%d.%d.%d&quot;, &amp;currVersion[0],
             &amp;currVersion[1], &amp;currVersion[2], &amp;currVersion[3]);
 cprintf(&quot;666ver_ver = %d\n&quot;,ver_ver);
-</code></pre><p> <code>#ifdef CONFIG_QCA_SDK</code><br>    sscanf (fwVersion, “%d.%d.%d.%d_%d.%d.%d”, &amp;newVersion[0], &amp;newVersion[1],<br>            &amp;newVersion[2], &amp;newVersion[3], &amp;newVersion[4], &amp;newVersion[5],<br>            &amp;newVersion[6]);<br>  <code>#else</code><br>    sscanf (fwVersion, “%d.%d.%d.%d”, &amp;newVersion[0], &amp;newVersion[1],<br>            &amp;newVersion[2], &amp;newVersion[3]);<br> <code>#endif</code><br>    cprintf(“666ver_ver = %d\n”,ver_ver);<br>    digit_num = (ver_ver == 4) ? 4 : 3;<br>    cprintf(“666digit_num = %d\n”,digit_num);<br>    if (newVersion[digit_num - 1] &gt;= 1000)<br>    {<br>        newSubVersion = newVersion[digit_num - 1] % 1000;<br>        newVersion[digit_num - 1] /= 1000;<br>        cprintf(“Gene debug %s(%d):\n”,<strong>FUNCTION</strong>,<strong>LINE</strong>);<br>        cprintf(“666newSubVersion = %d\n”,newSubVersion);<br>        cprintf(“Gene debug %s(%d):\n”,<strong>FUNCTION</strong>,<strong>LINE</strong>);<br>    }<br>    if (currVersion[digit_num - 1] &gt;= 1000)<br>    {<br>        currSubVersion = currVersion[digit_num - 1] % 1000;<br>        currVersion[digit_num - 1] /= 1000;<br>        cprintf(“Gene debug %s(%d):\n”,<strong>FUNCTION</strong>,<strong>LINE</strong>);<br>        cprintf(“666currSubVersion = %d\n”,currSubVersion);<br>        cprintf(“Gene debug %s(%d):\n”,<strong>FUNCTION</strong>,<strong>LINE</strong>);<br>    }</p>
-<pre><code>for (i = 0; i &lt; digit_num-1; i++)
+
+sscanf (fwVersion, &quot;%d.%d.%d.%d_%d.%d.%d&quot;, &amp;newVersion[0], &amp;newVersion[1],
+        &amp;newVersion[2], &amp;newVersion[3], &amp;newVersion[4], &amp;newVersion[5],
+        &amp;newVersion[6]);
+
+sscanf (fwVersion, &quot;%d.%d.%d.%d&quot;, &amp;newVersion[0], &amp;newVersion[1],
+        &amp;newVersion[2], &amp;newVersion[3]);
+
+cprintf(&quot;666ver_ver = %d\n&quot;,ver_ver);
+digit_num = (ver_ver == 4) ? 4 : 3;
+cprintf(&quot;666digit_num = %d\n&quot;,digit_num);
+if (newVersion[digit_num - 1] &gt;= 1000)
+{
+    newSubVersion = newVersion[digit_num - 1] % 1000;
+    newVersion[digit_num - 1] /= 1000;
+    cprintf(&quot;Gene debug %s(%d):\n&quot;,__FUNCTION__,__LINE__);
+    cprintf(&quot;666newSubVersion = %d\n&quot;,newSubVersion);
+    cprintf(&quot;Gene debug %s(%d):\n&quot;,__FUNCTION__,__LINE__);
+}
+if (currVersion[digit_num - 1] &gt;= 1000)
+{
+    currSubVersion = currVersion[digit_num - 1] % 1000;
+    currVersion[digit_num - 1] /= 1000;
+    cprintf(&quot;Gene debug %s(%d):\n&quot;,__FUNCTION__,__LINE__);
+    cprintf(&quot;666currSubVersion = %d\n&quot;,currSubVersion);
+    cprintf(&quot;Gene debug %s(%d):\n&quot;,__FUNCTION__,__LINE__);
+}
+
+for (i = 0; i &lt; digit_num-1; i++)
 {
     if (newVersion[i] &gt; currVersion[i])
     {
@@ -723,7 +750,7 @@ cprintf(&quot;666ver_ver = %d\n&quot;,ver_ver);
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">18.5k</span>
+    <span title="Site words total count">18.4k</span>
   
 </div>
 
